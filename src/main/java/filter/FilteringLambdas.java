@@ -3,7 +3,7 @@ package filter;
 import java.util.*;
 import java.util.function.Predicate;
 
-public class FilteringApples{
+public class FilteringLambdas {
 
     public static void main(String ... args){
 
@@ -12,11 +12,11 @@ public class FilteringApples{
                                               new Apple(120, "red"));	
 
         // [Apple{color='green', weight=80}, Apple{color='green', weight=155}]
-        List<Apple> greenApples = filterApples(inventory, FilteringApples::isGreenApple);
+        List<Apple> greenApples = filterApples(inventory, FilteringLambdas::isGreenApple);
         System.out.println(greenApples);
         
         // [Apple{color='green', weight=155}]
-        List<Apple> heavyApples = filterApples(inventory, FilteringApples::isHeavyApple);
+        List<Apple> heavyApples = filterApples(inventory, FilteringLambdas::isHeavyApple);
         System.out.println(heavyApples);
         
         // [Apple{color='green', weight=80}, Apple{color='green', weight=155}]
