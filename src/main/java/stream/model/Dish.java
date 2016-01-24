@@ -1,4 +1,4 @@
-package stream;
+package stream.model;
 import java.util.*;
 
 public class Dish {
